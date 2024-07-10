@@ -1,0 +1,98 @@
+/* ChatInterface.css */
+
+/* Chat container */
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chat window */
+  .chat-window {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Message container */
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Sent message */
+  .message.sent {
+    background-color: #e3f2fd;
+    align-self: flex-end;
+  }
+  
+  /* Received message */
+  .message.received {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+  }
+  
+  /* Message text */
+  .message p {
+    margin: 0;
+  }
+  
+  /* Message time */
+  .message .time {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Message form */
+  .message-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .message-form button:focus {
+    outline: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .chat-container {
+      max-width: 100%;
+      margin: 10px;
+    }
+  
+    .chat-window {
+      max-height: 200px;
+    }
+  }
+  
